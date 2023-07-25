@@ -27,10 +27,10 @@ public class TicTacToe {
                 gameOver = haveWon(board, player) || isDraw(board);
                 if (gameOver) {
                     printBoard(board);
-                    if (isDraw(board)) {
-                        System.out.println("It's a Draw!");
-                    } else {
+                    if (haveWon(board,player)) {
                         System.out.println("Player " + player + " is the Winner!!");
+                    } else if(isDraw(board)) {
+                        System.out.println("It's a Draw!");
                     }
                 } else {
                     player = (player == 'X') ? 'O' : 'X';
