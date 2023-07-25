@@ -86,10 +86,10 @@ public class TicTacToe {
         for (int row = 0; row < board.length; row++) {
             for (int col = 0; col < board[row].length; col++) {
                 if (board[row][col] == ' ') {
-                    return false; // If there is an empty cell, the board is not full
+                    return false; 
                 }
             }
         }
-        return true; // All cells are occupied, board is full
+        return true; 
     }
 }
