@@ -55,7 +55,7 @@ public class TicTacToe {
             }
             System.out.println();
             if(row!=2)
-            System.out.println("_ __ __");
+            System.out.println("__ ___ __");
             System.out.println();
         }
         System.out.println();
